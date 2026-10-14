@@ -2,9 +2,10 @@ import React from "react";
 import { Composition, continueRender, delayRender, staticFile } from "remotion";
 import { setLogo } from "./field";
 import { Film } from "./Film";
+import { LightFilm } from "./LightFilm";
 import { FPS, H, W } from "./theme";
 
-const weights = [400, 600, 700, 800];
+const weights = [300, 400, 600, 700, 800];
 const handle = delayRender("Loading Open Sans");
 Promise.all(
   weights.map((w) => {
@@ -26,5 +27,8 @@ Promise.all(
 ).then(() => continueRender(handle));
 
 export const Root: React.FC = () => (
-  <Composition id="USStocks30" component={Film} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
+  <>
+    <Composition id="Light30" component={LightFilm} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
+    <Composition id="USStocks30" component={Film} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
+  </>
 );
