@@ -1,0 +1,30 @@
+{
+  "name": "mstock-videos",
+  "private": true,
+  "version": "1.0.0",
+  "description": "m.Stock US Stocks launch film (Remotion)",
+  "scripts": {
+    "studio": "remotion studio",
+    "audio": "python3 -I tools/build_audio.py",
+    "render": "remotion render USStocks30 out/mstock-us-stocks-30s.mp4",
+    "stills": "node tools/render-stills.mjs"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "5.2.7",
+    "@react-three/fiber": "9.2.0",
+    "@remotion/cli": "4.0.399",
+    "@remotion/three": "4.0.399",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.399",
+    "three": "0.178.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/three": "0.178.1",
+    "d3-geo": "3.1.1",
+    "topojson-client": "3.1.0",
+    "typescript": "5.9.3",
+    "world-atlas": "2.0.2"
+  }
+}

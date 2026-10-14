@@ -1,0 +1,7 @@
+node_modules/
+out/
+storyboards/frames/html/
+.DS_Store
+# third-party reference music: keep local, never publish
+assets/ref/
+public/audio/music.wav

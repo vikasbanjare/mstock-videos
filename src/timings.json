@@ -1,0 +1,131 @@
+{
+ "fps": 30,
+ "duration": 30.0,
+ "lines": [
+  {
+   "text": "Your whole day runs on American companies.",
+   "start": 0.25,
+   "end": 2.905
+  },
+  {
+   "text": "How many do you own?",
+   "start": 3.085,
+   "end": 4.332
+  },
+  {
+   "text": "Too far.",
+   "start": 4.682,
+   "end": 5.634
+  },
+  {
+   "text": "Too expensive.",
+   "start": 5.754,
+   "end": 6.977
+  },
+  {
+   "text": "Too complicated.",
+   "start": 7.097,
+   "end": 8.353
+  },
+  {
+   "text": "Somebody else's game.",
+   "start": 8.533,
+   "end": 9.901
+  },
+  {
+   "text": "Not anymore.",
+   "start": 10.201,
+   "end": 11.135
+  },
+  {
+   "text": "We opened the door.",
+   "start": 11.255,
+   "end": 12.614
+  },
+  {
+   "text": "US stocks.",
+   "start": 13.114,
+   "end": 14.303
+  },
+  {
+   "text": "Now on m.Stock.",
+   "start": 14.383,
+   "end": 15.907
+  },
+  {
+   "text": "5,000+ stocks and ETFs.",
+   "start": 16.057,
+   "end": 18.544
+  },
+  {
+   "text": "Buy from India.",
+   "start": 18.664,
+   "end": 19.806
+  },
+  {
+   "text": "Own a piece.",
+   "start": 19.956,
+   "end": 20.801
+  },
+  {
+   "text": "From $1.*",
+   "start": 20.861,
+   "end": 21.977
+  },
+  {
+   "text": "100% digital account opening.",
+   "start": 22.127,
+   "end": 24.613
+  },
+  {
+   "text": "Customer by habit.",
+   "start": 24.733,
+   "end": 25.984
+  },
+  {
+   "text": "Shareholder by choice.",
+   "start": 26.104,
+   "end": 27.969
+  }
+ ],
+ "beats": [
+  0.717,
+  1.363,
+  2.008,
+  2.653,
+  3.299,
+  4.088,
+  4.733,
+  5.378,
+  6.048,
+  6.789,
+  7.458,
+  8.127,
+  8.869,
+  9.538,
+  10.183,
+  10.948,
+  11.618,
+  12.382,
+  13.028,
+  13.793,
+  14.462,
+  15.108,
+  15.753,
+  16.398,
+  17.187,
+  17.952,
+  18.598,
+  19.363,
+  20.032,
+  20.677,
+  21.323,
+  21.968,
+  22.757,
+  23.522,
+  24.191,
+  24.837,
+  25.482,
+  26.127
+ ]
+}
