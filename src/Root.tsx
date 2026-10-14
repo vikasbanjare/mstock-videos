@@ -1,6 +1,10 @@
 import React from "react";
 import { Composition, continueRender, delayRender, staticFile } from "remotion";
 import { setLogo } from "./field";
+import { IndiaFilm } from "./earth/IndiaFilm";
+import { TapFilm } from "./earth/TapFilm";
+import { WindowFilm } from "./earth/WindowFilm";
+import { WorldFilm } from "./earth/WorldFilm";
 import { Film } from "./Film";
 import { LightFilm } from "./LightFilm";
 import { LightFilm2 } from "./LightFilm2";
@@ -29,6 +33,10 @@ Promise.all(
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="OwnAWindow" component={WindowFilm} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
+    <Composition id="FourPercent" component={WorldFilm} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
+    <Composition id="OneTapAway" component={TapFilm} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
+    <Composition id="IndiaSwitchesOff" component={IndiaFilm} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
     <Composition id="Light30v2" component={LightFilm2} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
     <Composition id="Light30" component={LightFilm} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
     <Composition id="USStocks30" component={Film} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
