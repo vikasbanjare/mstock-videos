@@ -3,6 +3,7 @@ import { Composition, continueRender, delayRender, staticFile } from "remotion";
 import { setLogo } from "./field";
 import { Film } from "./Film";
 import { LightFilm } from "./LightFilm";
+import { LightFilm2 } from "./LightFilm2";
 import { FPS, H, W } from "./theme";
 
 const weights = [300, 400, 600, 700, 800];
@@ -28,6 +29,7 @@ Promise.all(
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="Light30v2" component={LightFilm2} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
     <Composition id="Light30" component={LightFilm} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
     <Composition id="USStocks30" component={Film} durationInFrames={30 * FPS} fps={FPS} width={W} height={H} />
   </>

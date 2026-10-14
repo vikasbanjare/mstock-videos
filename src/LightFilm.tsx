@@ -24,7 +24,7 @@ const hash = (i: number, j = 0) => {
 const win = (t: number, a: number, b: number, fi = 0.5, fo = 0.4) => Math.min(tw(t, a, a + fi), 1 - tw(t, b - fo, b, 0, 1, inExpo));
 
 /** A line of type that resolves out of blur, word by word, and leaves the same way. */
-const Line: React.FC<{ t: number; text: string; at: number; out: number; size?: number; weight?: number; color?: string; y: number; x?: number; align?: "center" | "left"; accent?: number[] }> = ({
+export const Line: React.FC<{ t: number; text: string; at: number; out: number; size?: number; weight?: number; color?: string; y: number; x?: number; align?: "center" | "left"; accent?: number[] }> = ({
   t,
   text,
   at,
@@ -72,10 +72,10 @@ const Line: React.FC<{ t: number; text: string; at: number; out: number; size?: 
 };
 
 /** Soft light: a sharp core plus two blurred copies, added on top of the dark. */
-const glow = (a: number, c = OR) => `0 0 ${6 + 10 * a}px ${1 + 2 * a}px ${c}, 0 0 ${40 + 60 * a}px ${8 + 14 * a}px rgba(245,130,32,${0.35 * a})`;
+export const glow = (a: number, c = OR) => `0 0 ${6 + 10 * a}px ${1 + 2 * a}px ${c}, 0 0 ${40 + 60 * a}px ${8 + 14 * a}px rgba(245,130,32,${0.35 * a})`;
 
 /* --------------------------------------------------------------------- particles (5,000 points) */
-const Field: React.FC<{ t: number }> = ({ t }) => {
+export const Field: React.FC<{ t: number }> = ({ t }) => {
   const ref = useRef<HTMLCanvasElement>(null);
   useLayoutEffect(() => {
     const g = ref.current!.getContext("2d")!;
@@ -119,7 +119,7 @@ const Field: React.FC<{ t: number }> = ({ t }) => {
 };
 
 /* --------------------------------------------------------------------- odometer for 5,000+ */
-const Odometer: React.FC<{ t: number; at: number }> = ({ t, at }) => {
+export const Odometer: React.FC<{ t: number; at: number }> = ({ t, at }) => {
   const digits = ["5", ",", "0", "0", "0", "+"];
   return (
     <div style={{ display: "flex", justifyContent: "center", fontFamily: F, fontWeight: 600, fontSize: 210, lineHeight: 1, color: "#fff", letterSpacing: "-0.03em" }}>
